@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveal Website Elements On Scroll - HTML, CSS & Javascript</title>
+    <link rel="stylesheet" href="css/TemerCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+
+    <header>
+        <h2 class="logo">Etec</h2>
+        <nav class="navigation">
+            <a href="MenuHist.html">Menu</a>
+            <a href="LinhaTempo.html">Linha do tempo</a>
+            <a href="PosEContra.html">Pós e Contras</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="sec-01">
+      <div class="container">
+        <h2 class="main-title">Michel Miguel Elias Temer Lulia</h2>
+        <div class="content">
+          <div class="image">
+            <img src="imagens/temer1.webp" alt="">
+          </div>
+          <div class="text-box">
+            <h3>Bibliografia</h3>
+            <p>Michel Temer é um advogado, professor, escritor e político brasileiro filiado ao Movimento
+               Democrático Brasileiro (MDB). Foi o 37º presidente do Brasil, de 2016 a 2019, após o impeachment 
+               da ex-presidente Dilma Rousseff.
+               <br>
+                Antes disso, foi o 24º vice-presidente do país, de 2011 a 2016, e 
+               também ocupou diversos cargos políticos como deputado federal, presidente da Câmara dos Deputados, 
+               secretário da Segurança Pública de São Paulo e procurador-geral do mesmo estado. Ele é o terceiro 
+               vice-presidente do MDB a se tornar presidente do Brasil sem ter sido eleito diretamente para o cargo, 
+               após José Sarney e Itamar Franco.</p>
+          </div>
+        </div>
+        <div class="media-icons">
+          <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">história de Temer</h3>
+        <div class="content">
+          <div class="image">
+            <img src="imagens/temer2.webp" alt="">
+          </div>
+          <div class="info">
+            <h4 class="info-title">Um pouco sobre sua história</h4>
+            <br>
+            <p> Michel Temer é filho de imigrantes libaneses que chegaram ao Brasil na década de 1920.
+               Formou-se em Direito pela Universidade de São Paulo em 1963, onde também se envolveu com política estudantil
+               . Foi advogado trabalhista, oficial de gabinete e lecionou em universidades. Ingressou na carreira pública em 
+               1970, como procurador do Estado de São Paulo. Em 1981, filiou-se ao MDB e, em 1986, tornou-se deputado federal
+                constituinte. Foi nomeado secretário de Segurança Pública em 1984 e novamente em 1992. Em 2011, tornou-se vice-presidente
+                 do Brasil, assumindo a presidência em 2016 após o impeachment de Dilma Rousseff.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-03">
+      <div class="container">
+        <h3 class="section-title">Feitos </h3>
+        <div class="content">
+          <div class="media-info">
+            <li>
+            <ion-icon name="play"></ion-icon> Reforma trabalhista</a></li>
+            <li><ion-icon name="play"></ion-icon> Teto dos gastos públicos</a></li>
+            <li><ion-icon name="play"></ion-icon> Reforma da Previdência</a></li>
+            <li><ion-icon name="play"></ion-icon> Queda da inflação</a></li>
+            <li><ion-icon name="play"></ion-icon> Aumento da confiança do mercado</a></li>
+            
+          </div>
+          <div class="image">
+            <img src="imagens/temer3.webp" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      //common reveal options to create reveal animations
+      ScrollReveal({
+        //reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+    </script>
+
+<script src="Script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>
+      

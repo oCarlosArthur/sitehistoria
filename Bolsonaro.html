@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveal Website Elements On Scroll - HTML, CSS & Javascript</title>
+    <link rel="stylesheet" href="css/BolsonaroCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+
+    <header>
+        <h2 class="logo">Etec</h2>
+        <nav class="navigation">
+            <a href="MenuHist.html">Menu</a>
+            <a href="LinhaTempo.html">Linha do tempo</a>
+            <a href="PosEContra.html">Pós e Contras</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="sec-01">
+      <div class="container">
+        <h2 class="main-title">Jair Messias Bolsonaro</h2>
+        <div class="content">
+          <div class="image">
+            <img src="imagens/bolsonaro1.webp" alt="">
+          </div>
+          <div class="text-box">
+            <h3>Bibliografia</h3>
+            <p>Jair Bolsonaro é um político brasileiro que atuou como 38º presidente do Brasil, de janeiro de 2019 a janeiro de 2023,
+               eleito pelo Partido Social Liberal (PSL). Antes de assumir a presidência, Bolsonaro foi deputado federal pelo
+                Rio de Janeiro por 27 anos e vereador do Rio de Janeiro pelo Partido Democrata Cristão (PDC).
+                <br>
+                 Durante sua carreira política, Bolsonaro ficou bastante conhecido por seu conservadorismo, oposição aos direitos LGBT e por seus pontos de vista de 
+                  extrema-direita e populistas. Seu governo foi caracterizado pela forte presença de ministros de formação militar, 
+                  alinhamento internacional com a direita populista. 
+                  <br>
+                  Seu governo também enfrentou diversas controvérsias, incluindo sua resposta à pandemia de
+                   COVID-19 no Brasil</p>
+          </div>
+        </div>
+        <div class="media-icons">
+          <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">história de Bolsonaro</h3>
+        <div class="content">
+          <div class="image">
+            <img src="imagens/bolsonaro2.jpeg" alt="">
+          </div>
+          <div class="info">
+            <h4 class="info-title">Um pouco sobre sua história</h4>
+            <br>
+            <p> Jair Bolsonaro nasceu em Glicério, São Paulo, mas foi registrado em Campinas, onde grande parte de sua família 
+                vivia. Seu nome foi escolhido em homenagem a Jair Rosa Pinto, meia-esquerda da Seleção Brasileira de Futebol, 
+                que fazia aniversário no dia em que ele nasceu. Inicialmente, sua mãe queria que ele se chamasse Messias Bolsonaro
+                 por ter tido uma gravidez complicada e atribuía a Deus o milagre do nascimento do filho. Bolsonaro cresceu em várias
+                  cidades de São Paulo, incluindo Ribeira, Jundiaí, Sete Barras e Eldorado, onde completou o ensino médio. Ele é o
+                   terceiro de seis irmãos e seus amigos o apelidaram de Palmito, que mais tarde se tornou "Mito".</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-03">
+      <div class="container">
+        <h3 class="section-title">Feitos </h3>
+        <div class="content">
+          <div class="media-info">
+            <li>
+            <ion-icon name="play"></ion-icon> Reforma da Previdência</a></li>
+            <li><ion-icon name="play"></ion-icon> Programa de incentivo ao empreendedorismo</a></li>
+            <li><ion-icon name="play"></ion-icon> Redução da burocracia</a></li>
+            <li><ion-icon name="play"></ion-icon> Auxílio Emergencial</a></li>
+            <li><ion-icon name="play"></ion-icon> Política externa</a></li>
+            <li><ion-icon name="play"></ion-icon> Marco Legal das Startups</a></li>
+            
+          </div>
+          <div class="image">
+            <img src="imagens/bolsonaro3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      //common reveal options to create reveal animations
+      ScrollReveal({
+        //reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+    </script>
+
+<script src="Script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>
+      

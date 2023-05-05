@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveal Website Elements On Scroll - HTML, CSS & Javascript</title>
+    <link rel="stylesheet" href="css/FernandoCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+
+    <header>
+        <h2 class="logo">Etec</h2>
+        <nav class="navigation">
+            <a href="MenuHist.html">Menu</a>
+            <a href="LinhaTempo.html">Linha do tempo</a>
+            <a href="PosEContra.html">Pós e Contras</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="sec-01">
+      <div class="container">
+        <h2 class="main-title">Fernando Henrique Cardoso</h2>
+        <div class="content">
+          <div class="image">
+            <img src="imagens/Fernando1.png" alt="">
+          </div>
+          <div class="text-box">
+            <h3>Bibliografia</h3>
+            <p>Fernando Henrique Cardoso, também conhecido como FHC (Rio de Janeiro, 18 de junho de 1931), é um professor, 
+              sociólogo, cientista político, escritor e político brasileiro. 
+              <br>
+              Filiado ao Partido da Social Democracia Brasileira (PSDB), foi o 34.º presidente da República Federativa do Brasil 
+              entre 1995 e 2003.</p>
+          </div>
+        </div>
+        <div class="media-icons">
+          <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">história de FHC</h3>
+        <div class="content">
+          <div class="image">
+            <img src="imagens/Fernando2.jpg" alt="">
+          </div>
+          <div class="info">
+            <h4 class="info-title">Um pouco sobre sua história</h4>
+            <br>
+            <p> Natural da cidade do Rio de Janeiro, mudou-se com sua família para a cidade de São Paulo
+              , onde se casou em 1953 com a antropóloga e sua colega de faculdade Ruth Vilaça 
+              Correia Leite, com quem teve três filhos. FHC graduou-se em Sociologia pela Universidade 
+              de São Paulo e mais tarde tornou-se professor emérito daquela universidade. Foi
+               perseguido depois do golpe militar de 1964, exilando-se no Chile e na França,
+               voltando ao Brasil em 1968. Lecionou em universidades estrangeiras e desenvolveu 
+               uma importante carreira acadêmica, tendo produzido diversos estudos sociais premiados.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-03">
+      <div class="container">
+        <h3 class="section-title">Feitos </h3>
+        <div class="content">
+          <div class="media-info">
+            <li>
+            <ion-icon name="play"></ion-icon> Plano Real</a></li>
+            <li><ion-icon name="play"></ion-icon> Privatizações</a></li>
+            <li><ion-icon name="play"></ion-icon> Lei da <br> Responsabilidade Fiscal</a></li>
+            <li><ion-icon name="play"></ion-icon> Bolsa Escola</a></li>
+            <li><ion-icon name="play"></ion-icon> Fim da Sensura</a></li>
+            <li><ion-icon name="play"></ion-icon> Criação do Enem</a></li>
+            
+          </div>
+          <div class="image">
+            <img src="imagens/Fernando3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      //common reveal options to create reveal animations
+      ScrollReveal({
+        //reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+    </script>
+
+<script src="Script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>
+      

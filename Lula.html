@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveal Website Elements On Scroll - HTML, CSS & Javascript</title>
+    <link rel="stylesheet" href="css/LulaCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+
+    <header>
+        <h2 class="logo">Etec</h2>
+        <nav class="navigation">
+            <a href="MenuHist.html">Menu</a>
+            <a href="LinhaTempo.html">Linha do tempo</a>
+            <a href="PosEContra.html">Pós e Contras</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="sec-01">
+      <div class="container">
+        <h2 class="main-title">Luiz Inácio Lula da Silva</h2>
+        <div class="content">
+          <div class="image">
+            <img src="imagens/lula3.webp" alt="">
+          </div>
+          <div class="text-box">
+            <h3>Bibliografia</h3>
+            <p>Luiz Inácio Lula da Silva (nascido Luiz Inácio da Silva; Garanhuns, 27 de outubro de 1945),
+                 mais conhecido como Lula, é um ex-metalúrgico, ex-sindicalista e político brasileiro.
+              <br>
+              Filiado ao Partido dos Trabalhadores (PT), é o 39º presidente do Brasil desde 1º de janeiro de 2023. 
+                  Foi também o 35º presidente da República, de 2003 a 2011.</p>
+          </div>
+        </div>
+        <div class="media-icons">
+          <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">história de Lula</h3>
+        <div class="content">
+          <div class="image">
+            <img src="imagens/lula2.webp" alt="">
+          </div>
+          <div class="info">
+            <h4 class="info-title">Um pouco sobre sua história</h4>
+            <br>
+            <p> De origem pobre, migrou ainda criança de Pernambuco para São Paulo com sua família. 
+                Foi metalúrgico e sindicalista, época em que recebeu a alcunha "Lula", forma hipocorística de "
+                Luís". Durante a ditadura militar, liderou grandes greves de operários no ABC Paulista e ajudou a
+                 fundar o PT em 1980, durante o processo de abertura política. Lula foi uma das principais lideranças
+                  do movimento Diretas Já, no período da redemocratização, quando iniciou sua carreira política. Elege
+                  u-se em 1986 deputado federal pelo estado de São Paulo com votação recorde. Em 1989 concorreu pela
+                   primeira vez à presidência da República, perdendo no segundo turno para Fernando Collor de Mello. 
+                   Foi candidato a presidente por outras duas vezes, em 1994 e em 1998, perdendo ambas as eleições 
+                   no primeiro turno para Fernando Henrique Cardoso. Venceu a eleição presidencial de 2002, derrotand
+                   o José Serra no segundo turno. Na eleição de 2006, foi reeleito ao superar Geraldo Alckmin no segun
+                   do turno.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-03">
+      <div class="container">
+        <h3 class="section-title">Feitos </h3>
+        <div class="content">
+          <div class="media-info">
+            <li>
+            <ion-icon name="play"></ion-icon> Programa Bolsa Família</a></li>
+            <li><ion-icon name="play"></ion-icon> Política externa</a></li>
+            <li><ion-icon name="play"></ion-icon> Programa Minha Casa,<br>Minha Vida </a></li>
+            <li><ion-icon name="play"></ion-icon> Pré-sal</a></li>
+            <li><ion-icon name="play"></ion-icon> Criação do Prouni</a></li>
+            
+          </div>
+          <div class="image">
+            <img src="imagens/lula4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      //common reveal options to create reveal animations
+      ScrollReveal({
+        //reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+    </script>
+
+<script src="Script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>
+      
