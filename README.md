@@ -75,4 +75,4 @@ As páginas e estilos foram mantidos conforme o trabalho original. Algumas parte
 
 ## Autoria
 
-**Projeto escolar desenvolvido em grupo**, com participação de **Carlos Arthur Abe de Almeida**.
+**Projeto escolar desenvolvido em grupo**, com participação de **Carlos Arthur Abe de Almeida, Gabriel da Silva Rodrigues, Igor Augusto da Silva de Assis e Vitor Sagioratto Ivanoff**.
