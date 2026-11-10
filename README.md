@@ -24,6 +24,12 @@ A proposta do projeto incluía um **chat/mural de opiniões para promover discus
 
 Por isso, **a versão publicada não comprova um chat em tempo real funcional de forma independente**. Para reativar a comunicação entre visitantes, seria necessário configurar um backend disponível, restaurar a listagem de mensagens e implementar/validar a atualização das conversas. O objetivo aqui é documentar fielmente o projeto desenvolvido.
 
+## Backend relacionado
+
+A estrutura inicial do backend associado à proposta de chat está no repositório **[historiaback](https://github.com/oCarlosArthur/historiaback)** (privado).
+
+Os projetos apresentam indícios de integração: o frontend prevê chamadas para uma API na porta `3333`, também presente no exemplo de configuração do backend. **No entanto, as rotas de opiniões ainda não constam no código publicado do backend**, de modo que a relação é documentada como o backend planejado para o chat, sem afirmar que a comunicação está funcional.
+
 ## Tecnologias utilizadas
 
 - **HTML5** — estrutura das páginas;
